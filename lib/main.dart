@@ -11,31 +11,17 @@ class Myapp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          child: Column(
             children: [
-              Container(
-                width: 100.0,
-                color: Colors.red,
-              ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  Container(
-                    width: 100.0,
-                    height: 100.0,
-                    color: Colors.yellow,
-                  ),
-                  Container(
-                    width: 100.0,
-                    height: 100.0,
-                    color: Colors.green,
-                  ),
-                ],
-              ),
-              Container(
-                width: 100.0,
-                color: Colors.blue,
+              CircleAvatar(
+                  radius: 60.0,
+                  backgroundImage: AssetImage('images/photo.jpg')),
+              Text(
+                'Rizky Apriliandi',
+                style: TextStyle(
+                    fontSize: 40,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold),
               )
             ],
           ),
